@@ -2,14 +2,17 @@ import random
 
 secret_number = random.randint(1, 100)
 attempts = 0
+def get_guess():
+    while True:
+        try:
+            guess = int(input("Guess a number between 1 and 100: "))
+            return guess
+        except ValueError:
+            print("That's not a valid number! Try again....🥹")
 while True:
-    try:
-        guess = int(input("Guess a number between 1 and 100: "))
-        attempts += 1
-    except ValueError:
-        print("That's not a valid number! Try again....🥹")
-        continue
-
+    guess = get_guess()
+    attempts += 1
+        
     if guess == secret_number:
         print("correct....🙂")
         break
