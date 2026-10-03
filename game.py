@@ -10,7 +10,7 @@ def get_guess():
             print("That's not a valid number! Try again....🥹")
 def play_game():
     secret_number = random.randint(1, 100)
-    attempts = 0
+    attempt-made = 0
     while True:
         guess = get_guess()
         attempts += 1
@@ -23,10 +23,10 @@ def play_game():
         elif guess < secret_number:
             print("Too low")
 
-        if attempts == 7:
+        if attempt-made == 7:
             print(f"You've used all your attempts! Game over. The number was {secret_number}")
             break
-        print("Attempts:", attempts)
+        print("Attempts:", attempt-made)
 while True:
     play_game()
     again = input("Play again?? (y/n): ")
