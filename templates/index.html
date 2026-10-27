@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Number Guessing Game</title>
+</head>
+
+<body>
+<h1>Number Guessing Game</h1>
+<p> Guess the secret number to win!🤓 </p>
+<form method="POST" action="/guess-game">
+<p>{{message}}</p>
+    
+<input type="number" name="guess" required value="{{guess}}">
+<button type="submit">Guess</button>
+</form>
+
+<form method="POST" action="/guess-game">
+
+<button type="submit">Play-Again</button>
+<input type="hidden" name="action" value="restart">
+
+</form>
+
+</body>
+</html>
