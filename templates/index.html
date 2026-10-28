@@ -10,15 +10,20 @@
 <p> Guess the secret number to win!🤓 </p>
 <form method="POST" action="/guess-game">
 <p>{{message}}</p>
-    
+{% if message == "Correct🥳"%}
+<h2>🎉 You won! 🎉</h2>
+<p> You guessed it in {{ guess_count }} tries🙃</p>
+{% endif %}    
+{% if message != "Correct🥳"%}
+<!-- <h2>You loose🙂😂</h2> -->
 <input type="number" name="guess" required value="{{guess}}">
 <button type="submit">Guess</button>
+{% endif %}
 </form>
 
 <form method="POST" action="/guess-game">
-
-<button type="submit">Play-Again</button>
 <input type="hidden" name="action" value="restart">
+<button type="submit">Play-Again</button>
 
 </form>
 
