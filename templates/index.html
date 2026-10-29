@@ -7,10 +7,11 @@
 </head>
 
 <body>
+<div class="game-container">
 <h1>Number Guessing Game</h1>
-<p> Guess the secret number to win!🤓 </p>
+<p class="subtitle"> Guess the secret number to win!🤓 </p>
 <form method="POST" action="/guess-game">
-<p>{{message}}</p>
+<p class="message">{{message}}</p>
 {% if message == "Correct🥳"%}
 <h2>🎉 You won! 🎉</h2>
 <p> You guessed it in {{ guess_count }} tries🙃</p>
@@ -27,6 +28,6 @@
 <button type="submit">Play-Again</button>
 
 </form>
-
+</div>
 </body>
 </html>

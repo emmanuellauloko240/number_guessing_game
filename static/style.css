@@ -1,0 +1,71 @@
+h1{
+    /* color:blue; */
+    color: darkblue;
+    font-size: 40px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+body{
+    background-color: #f0f4f8;
+    text-align: center;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background-color: orange;
+}
+button{
+    background-color: grey;
+    border-radius: 8px;
+    padding: 10px 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    padding: 10px 16px;
+}
+form + form {
+    margin-top: 15px;
+}
+input{
+    margin-right: 15px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 180px;
+    font-size: 16px;
+}
+.message{
+    margin-top: 15px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+button:hover{
+    background-color: #555;
+    transform: translateY(-2px);
+}
+.game-container{
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+
+    
+}
+.game-container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.subtitle{
+    color: #64748b;
+    font-weight: 600;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}

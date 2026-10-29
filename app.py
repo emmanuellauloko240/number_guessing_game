@@ -88,7 +88,7 @@ def music_home():
                 session["game_over🥱"] = True  # CORRECTED: assign True
 
             elif guess < secret_number:
-                message = "Too low"
+                message = "Too low😝"
 
             else:
                 message = "Too high🤓"
