@@ -13,6 +13,7 @@
 <p class="subtitle"> Guess the secret number to win!🤓 </p>
 <form method="POST" action="/guess-game">
 <p class="message">{{message}}</p>
+<p class="message"> Attempts used is {{guess_count}}</p>
 {% if message == "Correct🥳"%}
 <h2>🎉 You won! 🎉</h2>
 <p> You guessed it in {{ guess_count }} tries🙃</p>

@@ -65,4 +65,9 @@ def music_home():
         "index.html",
         guess="",
         guess_count=session["guess_count"]
+    )    return render_template(
+        "index.html",
+        guess="",
+        guess_count=session["guess_count"]
     )
+
