@@ -59,12 +59,13 @@ def music_home():
                 "index.html",
                 guess=guess,
                 message=message,
-                guess_count=session["guess_count"]
+                guess_count=session["guess_count"],
+                remaining_attempts=remaining_attempts,
             )
 
     # ADDED: handles GET requests and displays the page after restart
     return render_template(
         "index.html",
         guess="",
-        remaining_attempts = 7 - session['guess_count']
+        remaining_attempts=remaining_attempts,
     ) 
