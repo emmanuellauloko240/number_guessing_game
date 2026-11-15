@@ -13,6 +13,8 @@ def music_home():
 
     if "game_over🥱" not in session:
         session["game_over🥱"] = False
+    remaining_attempts= 7 - session['guess_count'],
+
 
     if request.method == "POST":
 
@@ -64,5 +66,5 @@ def music_home():
     return render_template(
         "index.html",
         guess="",
-        guess_count=session["guess_count"]
+        remaining_attempts = 7 - session['guess_count']
     ) 
